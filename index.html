@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Número Screto</title>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UUY3mYb5"></script>
+    <title>Número Secreto</title>
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="estilos/style.css">
 
 </head>
 <body>
-    <div id="container_box">
-        <div id="container_imagem"></div>
-        <div id="container_jogo">
-            <h1>Número Secreto</h1>
-            <p>Escolha um número entre 1 e 10</p>
-            <input type="number" name="chute" id="ichute">
-            <div id="botoes">
-                <input type="button" value="Chutar">
-                <input type="button" value="Novo Jogo">
+    <main class="container__principal">
+        <div class="container__box">
+            <div class="container__imagem">
+                <img src="imagens/r2-d2-pq.png" alt="R2 D2" class="imagem-pequena">
+                <img src="imagens/r2-d2.png" alt="R2 D2" class="imagem-grande">
+            </div>
+            <div class="container__jogo">
+                <h1 class="container__titulo"></h1>
+                <p class="container__texto"></p>
+                <input type="number" id="ichute" class="chute">
+                <div class="botoes">
+                    <input type="button" value="Chutar" onclick="verificarChute()">
+                    <input type="button" value="Novo Jogo" onclick="reiniciarJogo()">
+                </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">2024 - <a href="https://github.com/FBrunno96" target="_blank" class="rodape__link">Brunno Faissal</a></p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
